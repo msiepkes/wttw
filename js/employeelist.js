@@ -2,7 +2,7 @@
 							 alert('123');
          document.addEventListener("deviceready", function() {
         	alert ('456');
-		}, true); 
+		}, false); 
     });
  
 
