@@ -1,14 +1,21 @@
- $(document).ready(function () {
-							 alert('123');
-        $(document).bind('deviceready', function()
-												 
-{ // Your Cordova initialization goes here }
-alert('567');
-							 }
-);
-    });
  
-
+ 
+    function onLoad() {
+        alert("I've been loaded");
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+ function onDeviceReady() {
+        alert("Device Ready");
+    }
+	
+	
+	 function onBackKey() {
+        console.log("I've caught a back key");
+			
+        // We are going back to home so remove the event listener 
+        // so the default back key behaviour will take over
+        document.removeEventListener("backbutton", onBackKey, false);
+	 }
 
 /*var db;
 var dbCreated = false;
