@@ -1,12 +1,10 @@
  $(document).ready(function () {
 							 alert('123');
-         document.addEventListener("deviceready", onDeviceReady, true); 
+         document.addEventListener("deviceready", function() {
+        	alert ('456');
+		}, true); 
     });
-
-    function onDeviceReady() {
-        alert ('456');
-    }
-
+ 
 
 
 /*var db;
