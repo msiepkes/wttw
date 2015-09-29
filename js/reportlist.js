@@ -1,12 +1,20 @@
-var scroll = new iScroll('wrapper', { vScrollbar: false, hScrollbar:false, hScroll: false });
+ $(document).ready(function () {
+         document.addEventListener("deviceready", onDeviceReady, true); 
+    });
+
+    function onDeviceReady() {
+        alert ('123');
+    }
+
+/*var scroll = new iScroll('wrapper', { vScrollbar: false, hScrollbar:false, hScroll: false });
 var id = getUrlVars()["id"];
 
 var db;
-/*
-document.addEventListener("deviceready", onDeviceReady, false);*/
-alert('ww');/*
+
+document.addEventListener("deviceready", onDeviceReady, false);
+alert('ww');
 function onDeviceReady() {
-}*/
+}
 
  document.addEventListener("deviceready", function(){
       alert("123");
@@ -55,4 +63,4 @@ function getUrlVars() {
         vars[hash[0]] = hash[1];
     }
     return vars;
-}
+}*/
