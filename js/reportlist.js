@@ -2,14 +2,18 @@ var scroll = new iScroll('wrapper', { vScrollbar: false, hScrollbar:false, hScro
 var id = getUrlVars()["id"];
 
 var db;
-
-document.addEventListener("deviceready", onDeviceReady, false);
-alert('ww');
+/*
+document.addEventListener("deviceready", onDeviceReady, false);*/
+alert('ww');/*
 function onDeviceReady() {
+}*/
+
+ document.addEventListener("deviceready", function(){
+      alert("123");
 	alert('eReady');
     db = window.openDatabase("EmployeeDirectoryDB", "1.0", "PhoneGap Demo", 200000);
     db.transaction(getReportList, transaction_error);
-}
+ },true);
 
 function transaction_error(tx, error) {
 	$('#busy').hide();
