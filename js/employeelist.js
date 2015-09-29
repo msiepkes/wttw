@@ -4,6 +4,7 @@
 												 
 { // Your Cordova initialization goes here }
 alert('567');
+							 }
 );
     });
  
