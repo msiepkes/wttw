@@ -4,8 +4,9 @@ var id = getUrlVars()["id"];
 var db;
 
 document.addEventListener("deviceready", onDeviceReady, false);
-
+alert('ww');
 function onDeviceReady() {
+	alert('eReady');
     db = window.openDatabase("EmployeeDirectoryDB", "1.0", "PhoneGap Demo", 200000);
     db.transaction(getReportList, transaction_error);
 }
