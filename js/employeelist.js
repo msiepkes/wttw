@@ -1,7 +1,11 @@
+ $(document).ready(function () {
+							 alert('123');
+         document.addEventListener("deviceready", onDeviceReady, true); 
+    });
 
- document.addEventListener("deviceready", function(){
-      alert("123");
- },true);
+    function onDeviceReady() {
+        alert ('456');
+    }
 
 
 
