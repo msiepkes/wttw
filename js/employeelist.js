@@ -1,8 +1,10 @@
  $(document).ready(function () {
 							 alert('123');
-         document.addEventListener("deviceready", function() {
-        	alert ('456');
-		}, false); 
+        $(document).bind('deviceready', function()
+												 
+{ // Your Cordova initialization goes here }
+alert('567');
+);
     });
  
 
