@@ -1,51 +1,19 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-<title>Device Properties Example</title>
-<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
-<!--  
-<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.1.0.css" />
-<script src="js/jquery.js"></script>
-<script src="js/jquery.mobile-1.1.0.js"></script>
--->
-<script type="text/javascript" charset="utf-8">
- document.addEventListener("deviceready", onDeviceReady, false);
- function onDeviceReady() {
-  console.log("Entering index.html.onDeviceReady");
-  //var element = document.getElementById('deviceProperties');
-  var html = "";
-  html = html + "<li>" + 'Device Name: ' + device.name + "</li>";
-  html = html + "<li>" + 'Device Cordova: ' + device.cordova + "</li>";
-  html = html + "<li>" + 'Device Platform: ' + device.platform + "</li>";
-  html = html + "<li>" + 'Device UUID: ' + device.uuid + "</li>";
-  console.log(html);
-
-  $("#deviceProperties").html(html);
-  $("#deviceProperties").listview('refresh');
-  console.log("Exiting index.html.onDeviceReady");
- } 
-</script>
-</head>
-<body>
-
- <div data-role="page" id="page1">
-  <div data-theme="a" data-role="header">
-   <h3>Hello JQuery Mobile</h3>
-  </div>
-  <div data-role="content">
-   Device Properties
-   <ul data-role="listview" data-inset="true" 
-    id="deviceProperties">
-
-   </ul>
-  </div>
-  <div data-theme="a" data-role="footer">
-   <h3>Copyright stuff</h3>
-  </div>
- </div>
- 
-</body>
+  <head>
+    <title>mobiletuts phonegap</title>
+  <script src="phonegap.js"></script>      
+  <script>
+     function onLoad(){
+          document.addEventListener("deviceready", onDeviceReady, true);
+     }
+     function onDeviceReady(){
+          navigator.notification.alert("PhoneGap is working!!");
+     }
+  </script>
+  </head>
+  <body onload="onLoad();">
+       <h1>Welcome to PhoneGap</h1>
+       <h2>Edit assets/www/index.html</h2>
+  </body>
 </html>
