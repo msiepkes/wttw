@@ -26,6 +26,10 @@
 		
 		navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
+		window.setTimeout(function() {
+			navigator.notification.vibrate();
+		});
+		
 	 	alert('onDeviceReady einde');
      }
 	 
@@ -78,6 +82,21 @@
     function onFail(message) {
       alert('Failed because: ' + message);
     }
+    // alert dialog dismissed
+	function alertDismissed() {
+		window.location = "index.html";
+	}
+
+    // Show a custom alertDismissed
+    //
+    function showAlert() {
+        navigator.notification.alert(
+            'You are the winner!',  // message
+            alertDismissed,         // callback
+            'Game Over',            // title
+            'Done'                  // buttonName
+        );
+    }
   </script>
   </head>
   <body onload="onLoad()">
@@ -86,6 +105,8 @@
     <p id="deviceProperties">Loading device properties...</p>
 
     <p id="devicePosition">Loading device position...</p>
+<br>
+    <p><a href="#" onclick="showAlert(); return false;">Show Alert</a></p>
 <br>
     <button onclick="capturePhoto();">Capture Photo</button> <br>
     <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>

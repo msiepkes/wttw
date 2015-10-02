@@ -56,6 +56,8 @@
 	<gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
 	<gap:plugin name="hu.dpal.phonegap.plugins.uniquedeviceid" version="1.2.0" /> 
 	<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
+	<gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
+	<gap:plugin name="org.apache.cordova.vibration" version="0.3.11" />
 	<!-- -->
 
 	<access origin="http://phonegap.com" subdomains="true" />
