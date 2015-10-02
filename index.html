@@ -5,17 +5,23 @@
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
      function onLoad(){
-	 alert('onLoad');
+	 	alert('onLoad');
         document.addEventListener("deviceready", onDeviceReady, false);
      }
      function onDeviceReady(){
-	 alert('onDeviceReady');
+	 	alert('onDeviceReady');
+	 
+	 	$( '#txtId' ).attr( 'value', device.uuid );
           navigator.notification.alert("PhoneGap is working!!");
+	 	alert('onDeviceReady einde');
      }
   </script>
   </head>
   <body onload="onLoad()">
        <h1>Welcome to PhoneGap</h1>
        <h2>Edit assets/www/index.html</h2>
+	   
+	   <label id="lblId">Identifier:</label>
+	   <input id="txtId" type="number" value="0"/>
   </body>
 </html>
