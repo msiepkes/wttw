@@ -9,6 +9,13 @@
         document.addEventListener("deviceready", onDeviceReady, false);
      }
      function onDeviceReady(){
+	 
+	 
+		setTimeout(function() {
+			navigator.splashscreen.hide();
+		}, 2000);
+		
+		
 	 	alert('onDeviceReady');
 	 
 	 
@@ -30,6 +37,7 @@
 	        navigator.notification.beep(3);
 			navigator.notification.vibrate(2000);
 		},1500);
+
 		
 	 	alert('onDeviceReady einde');
      }
