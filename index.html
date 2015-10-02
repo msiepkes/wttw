@@ -27,7 +27,8 @@
 		navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
 		window.setTimeout(function() {
-			navigator.notification.vibrate();
+	        navigator.notification.beep(3);
+			navigator.notification.vibrate(2000);
 		},1500);
 		
 	 	alert('onDeviceReady einde');
