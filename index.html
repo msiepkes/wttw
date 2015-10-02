@@ -2,17 +2,19 @@
 <html>
   <head>
     <title>mobiletuts phonegap</title> 
-  <script src="cordova.js"></script>      
-  <script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
      function onLoad(){
-          document.addEventListener("deviceready", onDeviceReady, true);
+	 alert('onLoad');
+        document.addEventListener("deviceready", onDeviceReady, false);
      }
      function onDeviceReady(){
+	 alert('onDeviceReady');
           navigator.notification.alert("PhoneGap is working!!");
      }
   </script>
   </head>
-  <body onload="onLoad();">
+  <body onload="onLoad()">
        <h1>Welcome to PhoneGap</h1>
        <h2>Edit assets/www/index.html</h2>
   </body>
