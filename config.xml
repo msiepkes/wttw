@@ -18,16 +18,8 @@
 	<preference name="exit-on-suspend" value="false" />
 	<preference name="show-splash-screen-spinner" value="true" />
 	<preference name="auto-hide-splash-screen" value="false" />
-	
-	<preference name="SplashScreen" value="screen.png" />
+	<preference name="SplashScreen" value="foo" />
 	<preference name="SplashScreenDelay" value="10000" />
-	
-	<platform name="android">
-	<splash src="screen.png" density="port-hdpi"/>
-	<splash src="screen.png" density="port-ldpi"/>
-	<splash src="screen.png" density="port-mdpi"/>
-	<splash src="screen.png" density="port-xhdpi"/>
-	</platform>
 	<!--preference name="Orientation" value="portrait" /-->
 <!--
 	<icon src="images/icon.png" />
@@ -71,6 +63,8 @@
 	<gap:plugin name="org.apache.cordova.vibration" version="0.3.11" />
 	<gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
 	<!-- -->
+	
+	<gap:splash src="screen.png" />
 
 	<access origin="http://phonegap.com" subdomains="true" />
 	
