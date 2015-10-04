@@ -17,7 +17,17 @@
 	<preference name="target-device" value="handset" />
 	<preference name="exit-on-suspend" value="false" />
 	<preference name="show-splash-screen-spinner" value="true" />
-	<preference name="auto-hide-splash-screen" value="true" />
+	<preference name="auto-hide-splash-screen" value="false" />
+	
+	<preference name="SplashScreen" value="screen.png" />
+	<preference name="SplashScreenDelay" value="10000" />
+	
+	<platform name="android">
+	<splash src="screen.png" density="port-hdpi"/>
+	<splash src="screen.png" density="port-ldpi"/>
+	<splash src="screen.png" density="port-mdpi"/>
+	<splash src="screen.png" density="port-xhdpi"/>
+	</platform>
 	<!--preference name="Orientation" value="portrait" /-->
 <!--
 	<icon src="images/icon.png" />
@@ -37,8 +47,7 @@
 	<icon gap:platform="webos" src="res/icon/webos/icon-64.png" />
 	<icon gap:platform="winphone" src="res/icon/windows-phone/icon-48.png" />
 	<icon gap:platform="winphone" gap:role="background" src="res/icon/windows-phone/icon-173.png" />
-	
-	-->
+	 
 	<gap:splash gap:density="ldpi" gap:platform="android" src="large_android.png" />
 	<gap:splash gap:density="mdpi" gap:platform="android" src="large_android.png" />
 	<gap:splash gap:density="hdpi" gap:platform="android" src="large_android.png" />
@@ -49,7 +58,7 @@
 	<gap:splash gap:platform="ios" height="1024" src="large_iphone.png" width="768" />
 	<gap:splash gap:platform="ios" height="768" src="large_iphone.png" width="1024" />
 	<gap:splash gap:platform="winphone" src="large_android.png" />
-	
+	-->
 	<!-- 
 	<gap:plugin name="org.apache.cordova.vibration" version="0.3.11" />  
 	
